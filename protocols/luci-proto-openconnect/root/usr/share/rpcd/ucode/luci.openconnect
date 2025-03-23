@@ -15,9 +15,9 @@ function _readfile(path) {
 	let _stat = stat(path);
 	if (_stat && _stat.type == "file") {
 		let content = readfile(path);
-		return content ? trim(content) : 'File empty';
+		return content ? trim(content) : '';
 	}
-	return 'File not found';
+	return '';
 }
 
 // Utility to write a file
